@@ -1,0 +1,7 @@
+# This file gets merged with the docker-compose.yml file in the root of this project. Some keys are overwritten, others
+# are merged together, see https://docs.docker.com/compose/multiple-compose-files/merge/
+services:
+  run_tests:
+    # Overrides default command so things don't shut down after the process ends.
+    command: /bin/sh -c "while sleep 1000; do :; done"
+ 

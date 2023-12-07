@@ -1,0 +1,7 @@
+services:
+  run_tests:
+    restart: "no"
+    build: 
+      context: .
+    volumes: 
+      - .:/opt/example-debug-adapter-error:cached
